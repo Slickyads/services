@@ -17,60 +17,145 @@
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-58ZPXKF');</script>
     <!-- End Google Tag Manager -->
-    <title>Education Services</title>
+    <title>Slicky Media - Digital Marketing Agency</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #0a0a0a;
             min-height: 100vh;
+        }
+        .container {
+            display: flex;
+            min-height: 100vh;
+        }
+        .left {
+            width: 55%;
+            padding: 60px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+        }
+        .right {
+            width: 45%;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            padding: 60px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px;
         }
-        .audit-section {
-            max-width: 500px;
-            margin: 0 auto;
-            text-align: center;
+        .logo {
+            width: 70px;
+            height: 70px;
+            background: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 30px;
         }
-        .audit-section h2 {
-            font-size: 1.8rem;
-            margin-bottom: 15px;
-            color: #ffffff;
+        .logo img {
+            width: 50px;
+            height: 50px;
         }
-        .audit-section > p {
-            color: rgba(255,255,255,0.9);
+        .badge {
+            background: #25D366;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 20px;
+            width: fit-content;
+        }
+        h1 {
+            font-size: 2.8rem;
+            color: white;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+        .highlight {
+            color: #25D366;
+        }
+        .subtitle {
+            font-size: 1.1rem;
+            color: rgba(255,255,255,0.7);
             margin-bottom: 30px;
             line-height: 1.6;
         }
-        .audit-form {
-            padding: 30px;
-            background: #ffffff;
-            border-radius: 12px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+        .services-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 30px;
+        }
+        .service {
+            background: rgba(255,255,255,0.1);
+            padding: 8px 16px;
+            border-radius: 6px;
+            color: rgba(255,255,255,0.9);
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+        .stats {
+            display: flex;
+            gap: 40px;
+        }
+        .stat {
+            text-align: left;
+        }
+        .stat-number {
+            font-size: 2rem;
+            font-weight: 800;
+            color: #25D366;
+        }
+        .stat-label {
+            font-size: 0.85rem;
+            color: rgba(255,255,255,0.6);
+            margin-top: 4px;
+        }
+        .form-container {
+            width: 100%;
+            max-width: 420px;
+        }
+        .form-title {
+            color: white;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 25px;
+            text-align: center;
         }
         .form-group {
-            margin-bottom: 20px;
-            text-align: left;
+            margin-bottom: 18px;
         }
         .form-group label {
             display: block;
-            font-size: 0.9rem;
+            font-size: 0.85rem;
             font-weight: 600;
             margin-bottom: 8px;
-            color: #333;
+            color: rgba(255,255,255,0.9);
         }
         .form-group input,
-        .form-group select {
+        .form-group select,
+        .form-group textarea {
             width: 100%;
             padding: 14px 16px;
-            border: 2px solid #e9ecef;
+            border: 2px solid rgba(255,255,255,0.2);
             border-radius: 8px;
-            font-size: 1rem;
+            font-size: 0.95rem;
+            background: rgba(255,255,255,0.1);
+            color: white;
             transition: border-color 0.3s ease;
-            background-color: #fff;
+        }
+        .form-group input::placeholder,
+        .form-group textarea::placeholder {
+            color: rgba(255,255,255,0.5);
+        }
+        .form-group select option {
+            background: #1a1a2e;
+            color: white;
         }
         .form-group input:focus,
         .form-group select:focus,
@@ -79,45 +164,42 @@
             border-color: #25D366;
         }
         .form-group textarea {
-            width: 100%;
-            padding: 14px 16px;
-            border: 2px solid #e9ecef;
-            border-radius: 8px;
-            font-size: 1rem;
-            transition: border-color 0.3s ease;
-            background-color: #fff;
             resize: vertical;
-            min-height: 100px;
-            font-family: inherit;
+            min-height: 80px;
         }
         .btn-whatsapp {
             width: 100%;
-            padding: 16px 24px;
+            padding: 16px;
             background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
-            color: #ffffff;
+            color: white;
             border: none;
             border-radius: 8px;
             font-size: 1rem;
-            font-weight: 600;
+            font-weight: 700;
             cursor: pointer;
             transition: transform 0.2s ease, box-shadow 0.2s ease;
         }
         .btn-whatsapp:hover {
             transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+            box-shadow: 0 6px 20px rgba(37,211,102,0.4);
         }
         .form-note {
+            text-align: center;
             margin-top: 15px;
-            font-size: 0.85rem;
-            color: #6c757d;
+            font-size: 0.8rem;
+            color: rgba(255,255,255,0.6);
         }
-        .form-highlight {
-            margin-top: 30px;
-        }
-        .form-highlight p {
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: #ffffff;
+        @media (max-width: 900px) {
+            .container {
+                flex-direction: column-reverse;
+            }
+            .left, .right {
+                width: 100%;
+                padding: 30px 20px;
+            }
+            .right {
+                padding-top: 40px;
+            }
         }
     </style>
 </head>
@@ -126,62 +208,78 @@
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-58ZPXKF"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-    <section class="audit-section">
-        <h2>Start With a Free Account Review</h2>
-        <p>Tell us what you need. We'll come back with specific recommendations.</p>
 
-        <form class="audit-form" action="#" method="POST">
-            <div class="form-group">
-                <label for="name">Your Name</label>
-                <input type="text" id="name" name="name" required>
+    <div class="container">
+        <div class="left">
+            <div class="logo">
+                <img src="https://services.slickymedia.com/assets/images/slickyads_logo.png" alt="Slicky Media">
             </div>
-
-            <div class="form-group">
-                <label for="phone">Phone Number</label>
-                <input type="tel" id="phone" name="phone" required>
+            <span class="badge">Free Strategy Session</span>
+            <h1>Stop Wasting Money on<br><span class="highlight">Bad Ads</span></h1>
+            <p class="subtitle">Get a complete audit of your Google & Meta campaigns. We'll identify what's costing you money and how to fix it.</p>
+            <div class="services-list">
+                <span class="service">Google Ads</span>
+                <span class="service">Meta Ads</span>
+                <span class="service">SEO</span>
+                <span class="service">Shopify</span>
+                <span class="service">MarTech</span>
             </div>
-
-            <div class="form-group">
-                <label for="service">Service Needed</label>
-                <select id="service" name="service" required>
-                    <option value="" disabled selected>Select a service</option>
-                    <option value="google-ads">Google Ads Management</option>
-                    <option value="meta-ads">Meta Ads (Facebook & Instagram)</option>
-                    <option value="seo">SEO Services</option>
-                    <option value="ecommerce">eCommerce / Shopify Growth</option>
-                    <option value="martech">MarTech & Automation</option>
-                    <option value="project">Digital Project / Traffic Management</option>
-                    <option value="not-sure">Not sure yet</option>
-                </select>
+            <div class="stats">
+                <div class="stat">
+                    <div class="stat-number">10%+</div>
+                    <div class="stat-label">Avg. ROAS</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">50+</div>
+                    <div class="stat-label">Clients</div>
+                </div>
             </div>
-
-            <div class="form-group">
-                <label for="budget">Monthly Ad Spend (AED)</label>
-                <select id="budget" name="budget">
-                    <option value="" disabled selected>Select range</option>
-                    <option value="not-running">Not running ads yet</option>
-                    <option value="5000-15000">AED 5,000 – 15,000</option>
-                    <option value="15000-30000">AED 15,000 – 30,000</option>
-                    <option value="30000-75000">AED 30,000 – 75,000</option>
-                    <option value="75000+">AED 75,000+</option>
-                </select>
-            </div>
-
-            <div class="form-group">
-                <label for="message">Tell us about your requirements</label>
-                <textarea id="message" name="message" placeholder="Describe your goals, challenges, or any specific requirements..."></textarea>
-            </div>
-
-            <button type="submit" class="btn-whatsapp">
-                Send via WhatsApp →
-            </button>
-
-            <p class="form-note">Goes directly to Slicky Media. No middlemen. Replies same day.</p>
-        </form>
-
-        <div class="form-highlight">
-            <p>Free Consultation · No Obligation</p>
         </div>
-    </section>
+        <div class="right">
+            <div class="form-container">
+                <h2 class="form-title">Start With a Free Account Review</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" placeholder="John Smith" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="+971 50 XXX XXXX" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="service">Service Needed</label>
+                        <select id="service" name="service" required>
+                            <option value="" disabled selected>Select a service</option>
+                            <option value="google-ads">Google Ads Management</option>
+                            <option value="meta-ads">Meta Ads (Facebook & Instagram)</option>
+                            <option value="seo">SEO Services</option>
+                            <option value="ecommerce">eCommerce / Shopify Growth</option>
+                            <option value="martech">MarTech & Automation</option>
+                            <option value="project">Digital Project / Traffic Management</option>
+                            <option value="not-sure">Not sure yet</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="budget">Monthly Ad Spend (AED)</label>
+                        <select id="budget" name="budget">
+                            <option value="" disabled selected>Select range</option>
+                            <option value="not-running">Not running ads yet</option>
+                            <option value="5000-15000">AED 5,000 – 15,000</option>
+                            <option value="15000-30000">AED 15,000 – 30,000</option>
+                            <option value="30000-75000">AED 30,000 – 75,000</option>
+                            <option value="75000+">AED 75,000+</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Tell us about your requirements</label>
+                        <textarea id="message" name="message" placeholder="Describe your goals, challenges, or requirements..."></textarea>
+                    </div>
+                    <button type="submit" class="btn-whatsapp">Send via WhatsApp →</button>
+                    <p class="form-note">Goes directly to Slicky Media. No middlemen. Replies same day.</p>
+                </form>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
