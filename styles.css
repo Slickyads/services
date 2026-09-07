@@ -918,6 +918,12 @@ button {
   line-height: 1.6;
 }
 
+.footer__brand .logo,
+.footer__brand .logo__text,
+.footer__brand .logo__text b {
+  color: #ffffff;
+}
+
 .footer__links {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
