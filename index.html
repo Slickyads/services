@@ -329,6 +329,31 @@
                     <button type="submit" class="btn-whatsapp">Send via WhatsApp →</button>
                     <p class="form-note">Goes directly to Slicky Media. No middlemen. Replies same day.</p>
                 </form>
+
+                <script>
+                    const form = document.querySelector('form');
+                    const whatsappNumber = '+971508355477'; // Slicky Media WhatsApp
+
+                    form.addEventListener('submit', function(e) {
+                        e.preventDefault();
+
+                        const name = document.getElementById('name').value;
+                        const phone = document.getElementById('phone').value;
+                        const service = document.getElementById('service').value;
+                        const budget = document.getElementById('budget').value;
+                        const message = document.getElementById('message').value;
+
+                        let text = `Hi Slicky Media,\n\n`;
+                        text += `I'm interested in: ${service || 'General inquiry'}\n`;
+                        text += `Monthly ad budget: ${budget || 'Not specified'}\n`;
+                        text += `Name: ${name || 'Not provided'}\n`;
+                        text += `Phone: ${phone || 'Not provided'}\n`;
+                        text += `Additional notes: ${message || 'None'}\n`;
+
+                        const whatsappUrl = `https://wa.me/${whatsappNumber.replace('+', '')}?text=${encodeURIComponent(text)}`;
+                        window.open(whatsappUrl, '_blank');
+                    });
+                </script>
             </div>
         </div>
     </div>
