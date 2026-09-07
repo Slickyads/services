@@ -1,0 +1,1127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Case Study: Scaling Student Admissions & Slashing CPL by 73% | Slicky Media</title>
+  <meta name="description" content="Discover how Slicky Media helped a premier UAE educational institution cut cost per lead by 73% and scale to 370+ admissions inquiries per month using Google and Meta ads.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-dark: #090a0f;
+      --bg-card: rgba(22, 27, 46, 0.7);
+      --bg-card-hover: rgba(30, 38, 66, 0.85);
+      --border-color: rgba(255, 255, 255, 0.08);
+      --border-accent: rgba(99, 102, 241, 0.3);
+      --primary-gradient: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #d946ef 100%);
+      --accent-glow: rgba(99, 102, 241, 0.25);
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --text-dim: #64748b;
+      --whatsapp: #25D366;
+      --whatsapp-hover: #20bd5a;
+      --stat-green: #10b981;
+      --stat-blue: #38bdf8;
+      --stat-purple: #a855f7;
+      --stat-amber: #f59e0b;
+      --font-display: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+      --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg-dark);
+      color: var(--text-main);
+      font-family: var(--font-body);
+      line-height: 1.6;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Ambient Background Glows */
+    .glow-bg {
+      position: fixed;
+      width: 600px;
+      height: 600px;
+      border-radius: 50%;
+      filter: blur(140px);
+      pointer-events: none;
+      z-index: -1;
+      opacity: 0.15;
+    }
+    .glow-1 { top: -100px; left: -100px; background: #6366f1; }
+    .glow-2 { top: 40%; right: -150px; background: #8b5cf6; }
+    .glow-3 { bottom: 10%; left: 20%; background: #ec4899; }
+
+    .container {
+      width: 100%;
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* Navigation */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 24px 0;
+      border-bottom: 1px solid var(--border-color);
+    }
+    .brand-logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      color: var(--text-main);
+      font-family: var(--font-display);
+      font-weight: 700;
+      font-size: 1.25rem;
+    }
+    .brand-logo__img {
+      height: 40px;
+      width: auto;
+      display: block;
+    }
+    .brand-logo__text {
+      color: var(--text-main);
+      letter-spacing: -0.05em;
+    }
+    .brand-logo__text b {
+      font-weight: 800;
+    }
+    .brand-badge {
+      display: inline-block;
+      width: 12px;
+      height: 12px;
+      background: #8b5cf6;
+      border-radius: 50%;
+      box-shadow: 0 0 12px #8b5cf6;
+    }
+    .nav-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(37, 211, 102, 0.12);
+      color: var(--whatsapp);
+      border: 1px solid rgba(37, 211, 102, 0.3);
+      padding: 10px 18px;
+      border-radius: 999px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.25s ease;
+    }
+    .nav-cta:hover {
+      background: var(--whatsapp);
+      color: #000;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(37, 211, 102, 0.3);
+    }
+
+    /* Hero Section */
+    .hero {
+      padding: 70px 0 50px;
+      text-align: center;
+    }
+    .hero-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 16px;
+      border-radius: 999px;
+      background: rgba(99, 102, 241, 0.1);
+      border: 1px solid var(--border-accent);
+      color: #a5b4fc;
+      font-size: 0.825rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      margin-bottom: 24px;
+    }
+    .hero-title {
+      font-family: var(--font-display);
+      font-size: clamp(2.2rem, 5vw, 3.8rem);
+      line-height: 1.15;
+      font-weight: 800;
+      margin-bottom: 24px;
+      max-width: 950px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .gradient-text {
+      background: var(--primary-gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .hero-subtitle {
+      font-size: clamp(1.05rem, 2vw, 1.25rem);
+      color: var(--text-muted);
+      max-width: 780px;
+      margin: 0 auto 40px;
+      font-weight: 400;
+    }
+
+    /* Hero Client Meta Bar */
+    .client-meta-pill {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid var(--border-color);
+      border-radius: 16px;
+      padding: 16px 28px;
+      max-width: 860px;
+      margin: 0 auto 50px;
+    }
+    .meta-item {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      text-align: left;
+    }
+    .meta-label {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--text-dim);
+      font-weight: 600;
+    }
+    .meta-value {
+      font-size: 0.95rem;
+      color: var(--text-main);
+      font-weight: 600;
+    }
+
+    /* Stats Grid */
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+      margin-bottom: 70px;
+    }
+    .stat-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 20px;
+      padding: 28px 24px;
+      position: relative;
+      overflow: hidden;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      backdrop-filter: blur(16px);
+      text-align: left;
+    }
+    .stat-card:hover {
+      transform: translateY(-4px);
+      border-color: var(--border-accent);
+      background: var(--bg-card-hover);
+      box-shadow: 0 16px 36px rgba(0, 0, 0, 0.4), 0 0 24px var(--accent-glow);
+    }
+    .stat-number {
+      font-family: var(--font-display);
+      font-size: 2.8rem;
+      font-weight: 800;
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+    .stat-number.green { color: var(--stat-green); }
+    .stat-number.blue { color: var(--stat-blue); }
+    .stat-number.purple { color: var(--stat-purple); }
+    .stat-number.amber { color: var(--stat-amber); }
+    .stat-title {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 6px;
+    }
+    .stat-desc {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      line-height: 1.4;
+    }
+
+    /* Section Headings */
+    .section-header {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+    .section-eyebrow {
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #818cf8;
+      margin-bottom: 12px;
+      display: block;
+    }
+    .section-title {
+      font-family: var(--font-display);
+      font-size: clamp(1.8rem, 3.5vw, 2.5rem);
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 16px;
+    }
+    .section-subtitle {
+      color: var(--text-muted);
+      font-size: 1.05rem;
+      max-width: 680px;
+      margin: 0 auto;
+    }
+
+    /* Challenges Section */
+    .challenges-section {
+      padding: 60px 0;
+    }
+    .challenges-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 24px;
+    }
+    .challenge-card {
+      background: var(--bg-card);
+      border: 1px solid rgba(239, 68, 68, 0.2);
+      border-radius: 18px;
+      padding: 28px;
+      backdrop-filter: blur(12px);
+    }
+    .challenge-tag {
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 6px;
+      background: rgba(239, 68, 68, 0.15);
+      color: #f87171;
+      font-size: 0.75rem;
+      font-weight: 700;
+      margin-bottom: 16px;
+      text-transform: uppercase;
+    }
+    .challenge-card h3 {
+      font-family: var(--font-display);
+      font-size: 1.25rem;
+      margin-bottom: 12px;
+      color: var(--text-main);
+    }
+    .challenge-card p {
+      color: var(--text-muted);
+      font-size: 0.925rem;
+      line-height: 1.5;
+    }
+
+    /* Strategy 3-Pillar Section */
+    .strategy-section {
+      padding: 80px 0;
+    }
+    .pillars-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 24px;
+    }
+    .pillar-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 20px;
+      padding: 32px 28px;
+      position: relative;
+      transition: all 0.3s ease;
+    }
+    .pillar-card:hover {
+      border-color: var(--border-accent);
+      transform: translateY(-4px);
+    }
+    .pillar-num {
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      background: var(--primary-gradient);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-display);
+      font-weight: 800;
+      font-size: 1.2rem;
+      color: #fff;
+      margin-bottom: 20px;
+    }
+    .pillar-card h3 {
+      font-family: var(--font-display);
+      font-size: 1.35rem;
+      font-weight: 700;
+      margin-bottom: 14px;
+    }
+    .pillar-card ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .pillar-card li {
+      position: relative;
+      padding-left: 24px;
+      font-size: 0.92rem;
+      color: var(--text-muted);
+      line-height: 1.45;
+    }
+    .pillar-card li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: var(--stat-green);
+      font-weight: 800;
+    }
+
+    /* Performance Timeline & Tabs */
+    .timeline-section {
+      padding: 80px 0;
+      background: rgba(255, 255, 255, 0.015);
+      border-top: 1px solid var(--border-color);
+      border-bottom: 1px solid var(--border-color);
+    }
+    .tabs-nav {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      margin-bottom: 36px;
+      flex-wrap: wrap;
+    }
+    .tab-btn {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid var(--border-color);
+      color: var(--text-muted);
+      padding: 12px 24px;
+      border-radius: 999px;
+      font-family: var(--font-body);
+      font-size: 0.92rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.25s ease;
+    }
+    .tab-btn:hover {
+      color: var(--text-main);
+      background: rgba(255, 255, 255, 0.08);
+    }
+    .tab-btn.active {
+      background: var(--primary-gradient);
+      color: #fff;
+      border-color: transparent;
+      box-shadow: 0 6px 20px rgba(99, 102, 241, 0.35);
+    }
+    .tab-content {
+      display: none;
+      animation: fadeIn 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .tab-content.active {
+      display: block;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(8px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .timeline-detail-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 24px;
+      padding: 36px;
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 36px;
+      align-items: center;
+    }
+    @media (max-width: 860px) {
+      .timeline-detail-card {
+        grid-template-columns: 1fr;
+      }
+    }
+    .timeline-data-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.9rem;
+    }
+    .timeline-data-table th {
+      text-align: left;
+      padding: 10px 14px;
+      color: var(--text-dim);
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      border-bottom: 1px solid var(--border-color);
+    }
+    .timeline-data-table td {
+      padding: 12px 14px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+      color: var(--text-main);
+    }
+    .timeline-data-table tr:last-child td {
+      border-bottom: none;
+    }
+    .highlight-pill {
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 999px;
+      font-size: 0.8rem;
+      font-weight: 700;
+    }
+    .pill-green { background: rgba(16, 185, 129, 0.15); color: #34d399; }
+    .pill-blue { background: rgba(56, 189, 248, 0.15); color: #38bdf8; }
+    .pill-purple { background: rgba(168, 85, 247, 0.15); color: #c084fc; }
+
+    /* Visual Comparison Bars */
+    .bars-container {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      margin-top: 20px;
+    }
+    .bar-item {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .bar-meta {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.85rem;
+    }
+    .bar-label { color: var(--text-muted); font-weight: 500; }
+    .bar-val { font-weight: 700; color: var(--text-main); }
+    .bar-track {
+      width: 100%;
+      height: 10px;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 999px;
+      overflow: hidden;
+    }
+    .bar-fill {
+      height: 100%;
+      border-radius: 999px;
+      transition: width 1s ease-in-out;
+    }
+    .fill-purple { background: linear-gradient(90deg, #6366f1, #a855f7); }
+    .fill-green { background: linear-gradient(90deg, #10b981, #34d399); }
+    .fill-amber { background: linear-gradient(90deg, #f59e0b, #fbbf24); }
+
+    /* Channel Split Table */
+    .channels-section {
+      padding: 80px 0;
+    }
+    .comparison-table-wrapper {
+      overflow-x: auto;
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 20px;
+      padding: 10px;
+    }
+    .comp-table {
+      width: 100%;
+      min-width: 600px;
+      border-collapse: collapse;
+      text-align: left;
+    }
+    .comp-table th, .comp-table td {
+      padding: 16px 20px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+    .comp-table th {
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .comp-table tr:hover td {
+      background: rgba(255, 255, 255, 0.02);
+    }
+
+    /* Playbook / Takeaways */
+    .playbook-section {
+      padding: 60px 0;
+    }
+    .takeaways-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+    .takeaway-box {
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid var(--border-color);
+      border-radius: 16px;
+      padding: 24px;
+      border-left: 4px solid #818cf8;
+    }
+    .takeaway-box h4 {
+      font-family: var(--font-display);
+      font-size: 1.15rem;
+      margin-bottom: 8px;
+    }
+    .takeaway-box p {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    /* High-Converting CTA Box */
+    .cta-box {
+      background: linear-gradient(135deg, rgba(30, 27, 75, 0.9) 0%, rgba(15, 23, 42, 0.95) 100%);
+      border: 1px solid rgba(99, 102, 241, 0.4);
+      border-radius: 28px;
+      padding: 60px 40px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      margin: 80px 0 100px;
+      box-shadow: 0 24px 60px rgba(0, 0, 0, 0.6), 0 0 40px rgba(99, 102, 241, 0.2);
+    }
+    .cta-box h2 {
+      font-family: var(--font-display);
+      font-size: clamp(2rem, 4vw, 3rem);
+      margin-bottom: 16px;
+      font-weight: 800;
+    }
+    .cta-box p {
+      font-size: 1.15rem;
+      color: var(--text-muted);
+      max-width: 620px;
+      margin: 0 auto 36px;
+    }
+    .cta-buttons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+    .btn-whatsapp-large {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      background: var(--whatsapp);
+      color: #04240f;
+      font-weight: 700;
+      font-size: 1.1rem;
+      padding: 16px 36px;
+      border-radius: 999px;
+      text-decoration: none;
+      box-shadow: 0 10px 28px rgba(37, 211, 102, 0.4);
+      transition: all 0.25s ease;
+    }
+    .btn-whatsapp-large:hover {
+      background: var(--whatsapp-hover);
+      transform: translateY(-3px);
+      box-shadow: 0 14px 34px rgba(37, 211, 102, 0.5);
+    }
+    .btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: rgba(255, 255, 255, 0.08);
+      color: var(--text-main);
+      font-weight: 600;
+      font-size: 1.05rem;
+      padding: 16px 30px;
+      border-radius: 999px;
+      text-decoration: none;
+      border: 1px solid var(--border-color);
+      transition: all 0.25s ease;
+    }
+    .btn-secondary:hover {
+      background: rgba(255, 255, 255, 0.14);
+      transform: translateY(-2px);
+    }
+
+    /* Footer */
+    footer {
+      border-top: 1px solid var(--border-color);
+      padding: 40px 0;
+      text-align: center;
+      color: var(--text-dim);
+      font-size: 0.85rem;
+    }
+    footer a {
+      color: var(--text-muted);
+      text-decoration: none;
+    }
+    footer a:hover {
+      color: var(--text-main);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Ambient Glow Effects -->
+  <div class="glow-bg glow-1"></div>
+  <div class="glow-bg glow-2"></div>
+  <div class="glow-bg glow-3"></div>
+
+  <div class="container">
+    <!-- Navbar -->
+    <header class="navbar">
+      <a href="index.html" class="brand-logo">
+        <img src="assets/images/slickymedia_logo-white.png" alt="Slicky Media" class="brand-logo__img">
+        <span class="brand-logo__text">Slicky<b>Media</b></span>
+      </a>
+      <a href="https://wa.me/971508355477?text=Hi%20Slicky%20Media,%20I%20reviewed%20your%20Education%20Case%20Study%20and%20would%20like%20to%20discuss%20our%20ad%20campaigns" class="nav-cta" id="nav-whatsapp-cta" target="_blank" rel="noopener">
+        <span>💬 Chat on WhatsApp</span>
+      </a>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-eyebrow">
+        <span>⚡ Case Study · Education & K-12 Admissions</span>
+      </div>
+      <h1 class="hero-title">
+        How We Scaled Student Inquiries by 4x &amp; <span class="gradient-text">Cut Cost Per Lead by 73%</span>
+      </h1>
+      <p class="hero-subtitle">
+        A full-funnel acquisition architecture combining high-intent Google Search, localized Meta video storytelling, and zero-friction WhatsApp conversion paths for premier UAE education institutions.
+      </p>
+
+      <!-- Client Profile Metadata Bar -->
+      <div class="client-meta-pill">
+        <div class="meta-item">
+          <span class="meta-label">Client Type</span>
+          <span class="meta-value">British Curriculum K–12 &amp; Academies</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Target Markets</span>
+          <span class="meta-value">Dubai, Abu Dhabi &amp; Sharjah</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Channels Managed</span>
+          <span class="meta-value">Google Search, PMax &amp; Meta Ads</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Campaign Timeline</span>
+          <span class="meta-value">Aug 2025 – Aug 2026</span>
+        </div>
+      </div>
+
+      <!-- Stats Grid -->
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-number green">-73%</div>
+          <div class="stat-title">Cost Per Lead Drop</div>
+          <div class="stat-desc">Slashed initial CPA from 290 AED down to 79 AED within the first 60 days.</div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-number blue">370+</div>
+          <div class="stat-title">Peak Monthly Inquiries</div>
+          <div class="stat-desc">111 form leads, 138 direct WhatsApp chats, and 233 clicks-to-call during August intake.</div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-number purple">1,981 AED</div>
+          <div class="stat-title">Cost per Enrollment</div>
+          <div class="stat-desc">Directly enrolled students at ~1,981 AED against tuition starting at 36,000+ AED/year.</div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-number amber">4.0x</div>
+          <div class="stat-title">Lookalike Conversion Lift</div>
+          <div class="stat-desc">1% Lookalike of enrolled families reduced social acquisition cost by 77% vs broad targeting.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- The Problem / Challenges -->
+    <section class="challenges-section">
+      <div class="section-header">
+        <span class="section-eyebrow">The Baseline Challenge</span>
+        <h2 class="section-title">Why Most School Ad Spend is Wasted in the UAE</h2>
+        <p class="section-subtitle">
+          Prior to our account takeover and restructuring, the campaigns encountered three classic structural leaks that inflated acquisition costs.
+        </p>
+      </div>
+
+      <div class="challenges-grid">
+        <div class="challenge-card">
+          <span class="challenge-tag">Leak #1</span>
+          <h3>60%+ Geographic Leakage</h3>
+          <p>
+            Default Google "presence or interest" settings were serving ads to international users and non-commutable emirates. Over 60% of search clicks were leaking outside the school’s immediate Dubai catchment area.
+          </p>
+        </div>
+
+        <div class="challenge-card">
+          <span class="challenge-tag">Leak #2</span>
+          <h3>Sky-High CPL &amp; Competitor Bidding</h3>
+          <p>
+            Initial testing had an alarming CPA of 290 AED. Heavy ad spend was burned on non-converting competitor keywords (costing over 1,170 AED per single lead) and informational terms with no enrollment intent.
+          </p>
+        </div>
+
+        <div class="challenge-card">
+          <span class="challenge-tag">Leak #3</span>
+          <h3>Mobile Inquiry Friction</h3>
+          <p>
+            Parents browsing on mobile dropped off when confronted with 8-field registration forms. With no direct WhatsApp messaging or click-to-call paths, high-intent inquiries were lost.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- The 3-Pillar Solution -->
+    <section class="strategy-section">
+      <div class="section-header">
+        <span class="section-eyebrow">The Growth Strategy</span>
+        <h2 class="section-title">The 3-Pillar Enrollment Acquisition Engine</h2>
+        <p class="section-subtitle">
+          We rebuilt the entire funnel from bottom to top, focusing strictly on high-intent parents and qualified tour bookings.
+        </p>
+      </div>
+
+      <div class="pillars-grid">
+        <div class="pillar-card">
+          <div class="pillar-num">01</div>
+          <h3>Zero-Waste Geo-Fencing &amp; Negative Pruning</h3>
+          <ul>
+            <li>Enforced strict "Physical Presence" geo-targeting around targeted school zones in Dubai &amp; Abu Dhabi.</li>
+            <li>Implemented strict dayparting (6:00 AM – 10:00 PM) to eliminate overnight bot and scraping clicks.</li>
+            <li>Aggressively pruned broad informational terms and unprofitable competitor names, saving 35%+ of ad budget.</li>
+          </ul>
+        </div>
+
+        <div class="pillar-card">
+          <div class="pillar-num">02</div>
+          <h3>High-Intent Search &amp; Price Transparency</h3>
+          <ul>
+            <li>Allocated 80%+ of Google budget to high-intent queries: <code>school admissions dubai</code> and British curriculum terms.</li>
+            <li>Introduced sitelinks with transparent fee disclosures: <em>"Apply Now! Fees Starting from AED 36,000"</em> to pre-qualify affluent parents.</li>
+            <li>Search Retargeting generated 113 qualified conversions at an average CPC under 7 AED.</li>
+          </ul>
+        </div>
+
+        <div class="pillar-card">
+          <div class="pillar-num">03</div>
+          <h3>Social Proof Videos &amp; Direct WhatsApp</h3>
+          <ul>
+            <li>Produced video tours highlighting STEM labs, sports facilities, and parent testimonials (achieving a 20%+ hook rate).</li>
+            <li>Replaced cold broad prospecting with 1% Lookalikes of enrolled parents, dropping Meta CPL from 244 AED to 138 AED.</li>
+            <li>Integrated 1-click WhatsApp chat buttons, capturing 138 high-intent conversations in the peak admissions month alone.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Performance Progression Tabs -->
+    <section class="timeline-section">
+      <div class="section-header">
+        <span class="section-eyebrow">Proven Progression</span>
+        <h2 class="section-title">Data Progression Across Campaign Phases</h2>
+        <p class="section-subtitle">
+          Real metrics demonstrating how iterative optimization scaled inquiries while driving down cost-per-lead.
+        </p>
+      </div>
+
+      <div class="tabs-nav">
+        <button class="tab-btn active" onclick="showTab('tab-phase1', this)">Phase 1: Launch &amp; Pruning</button>
+        <button class="tab-btn" onclick="showTab('tab-phase2', this)">Phase 2: Mid-Year Optimization</button>
+        <button class="tab-btn" onclick="showTab('tab-phase3', this)">Phase 3: Back-to-School Scale</button>
+      </div>
+
+      <!-- Tab 1 -->
+      <div id="tab-phase1" class="tab-content active">
+        <div class="timeline-detail-card">
+          <div>
+            <h3>Phase 1: Rapid CPA Compression (Aug 2025 – Jan 2026)</h3>
+            <p style="color: var(--text-muted); margin: 12px 0 20px;">
+              Systematic negative keyword pruning and demographic filtering reduced initial testing CPL from 290 AED down to 79 AED. Confirmed that the 25–44 age demographic accounted for 82% of qualified inquiries.
+            </p>
+            <div class="bars-container">
+              <div class="bar-item">
+                <div class="bar-meta">
+                  <span class="bar-label">Week 34 Initial CPA</span>
+                  <span class="bar-val">290 AED</span>
+                </div>
+                <div class="bar-track"><div class="bar-fill fill-amber" style="width: 100%;"></div></div>
+              </div>
+              <div class="bar-item">
+                <div class="bar-meta">
+                  <span class="bar-label">Week 36 Post-Pruning CPA</span>
+                  <span class="bar-val">102 AED</span>
+                </div>
+                <div class="bar-track"><div class="bar-fill fill-purple" style="width: 35%;"></div></div>
+              </div>
+              <div class="bar-item">
+                <div class="bar-meta">
+                  <span class="bar-label">December Stabilized CPA</span>
+                  <span class="bar-val">79 AED (-73%)</span>
+                </div>
+                <div class="bar-track"><div class="bar-fill fill-green" style="width: 27%;"></div></div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <table class="timeline-data-table">
+              <tr>
+                <th>Key Metric</th>
+                <th>Phase 1 Milestone</th>
+              </tr>
+              <tr>
+                <td>Monthly Spend</td>
+                <td>~14,000 AED</td>
+              </tr>
+              <tr>
+                <td>Avg Search CTR</td>
+                <td>4.03% (Top 10% in education)</td>
+              </tr>
+              <tr>
+                <td>Impression Share</td>
+                <td>22% (Outranked key competitors)</td>
+              </tr>
+              <tr>
+                <td>Lowest Weekly CPA</td>
+                <td><span class="highlight-pill pill-green">61 AED / lead</span></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab 2 -->
+      <div id="tab-phase2" class="tab-content">
+        <div class="timeline-detail-card">
+          <div>
+            <h3>Phase 2: Full-Funnel Tour Bookings (Feb 2026)</h3>
+            <p style="color: var(--text-muted); margin: 12px 0 20px;">
+              Integrated Google Performance Max with Meta video testimonial campaigns. Google drove high volume of scheduled school tours (103 MQLs at 112 AED CPA), while Meta retargeting closed 4 direct enrollments.
+            </p>
+            <div class="bars-container">
+              <div class="bar-item">
+                <div class="bar-meta">
+                  <span class="bar-label">Google PMax CPA</span>
+                  <span class="bar-val">64 AED</span>
+                </div>
+                <div class="bar-track"><div class="bar-fill fill-green" style="width: 32%;"></div></div>
+              </div>
+              <div class="bar-item">
+                <div class="bar-meta">
+                  <span class="bar-label">Meta Lookalike Audience CPL</span>
+                  <span class="bar-val">138 AED</span>
+                </div>
+                <div class="bar-track"><div class="bar-fill fill-purple" style="width: 69%;"></div></div>
+              </div>
+              <div class="bar-item">
+                <div class="bar-meta">
+                  <span class="bar-label">Cold Broad Prospecting CPL (Discarded)</span>
+                  <span class="bar-val">244 AED</span>
+                </div>
+                <div class="bar-track"><div class="bar-fill fill-amber" style="width: 100%;"></div></div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <table class="timeline-data-table">
+              <tr>
+                <th>Key Metric</th>
+                <th>February Performance</th>
+              </tr>
+              <tr>
+                <td>Combined Spend</td>
+                <td>22,674 AED</td>
+              </tr>
+              <tr>
+                <td>Total MQLs / Tour Bookings</td>
+                <td><span class="highlight-pill pill-blue">146 Qualified Leads</span></td>
+              </tr>
+              <tr>
+                <td>Confirmed Enrollments</td>
+                <td><span class="highlight-pill pill-green">4 Students Enrolled</span></td>
+              </tr>
+              <tr>
+                <td>Cost Per Enrolled Student</td>
+                <td>1,981 AED (Meta Attributed)</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab 3 -->
+      <div id="tab-phase3" class="tab-content">
+        <div class="timeline-detail-card">
+          <div>
+            <h3>Phase 3: Peak Admissions Acceleration (August 2026)</h3>
+            <p style="color: var(--text-muted); margin: 12px 0 20px;">
+              Scaled budgets for peak Back-to-School intake. Over 56% of conversions occurred during the final push week before school opening. Direct telephone and WhatsApp interactions outpaced traditional form fills by 3 to 1.
+            </p>
+            <div class="bars-container">
+              <div class="bar-item">
+                <div class="bar-meta">
+                  <span class="bar-label">Direct Phone Call Clicks</span>
+                  <span class="bar-val">233 Calls</span>
+                </div>
+                <div class="bar-track"><div class="bar-fill fill-blue" style="width: 90%;"></div></div>
+              </div>
+              <div class="bar-item">
+                <div class="bar-meta">
+                  <span class="bar-label">WhatsApp Inquiries</span>
+                  <span class="bar-val">138 Chats</span>
+                </div>
+                <div class="bar-track"><div class="bar-fill fill-green" style="width: 60%;"></div></div>
+              </div>
+              <div class="bar-item">
+                <div class="bar-meta">
+                  <span class="bar-label">Form Submissions</span>
+                  <span class="bar-val">111 Forms</span>
+                </div>
+                <div class="bar-track"><div class="bar-fill fill-purple" style="width: 48%;"></div></div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <table class="timeline-data-table">
+              <tr>
+                <th>Key Metric</th>
+                <th>Peak Month Volume</th>
+              </tr>
+              <tr>
+                <td>Monthly Spend</td>
+                <td>35,640 AED</td>
+              </tr>
+              <tr>
+                <td>Total Parent Inquiries</td>
+                <td><span class="highlight-pill pill-purple">370+ Total Inquiries</span></td>
+              </tr>
+              <tr>
+                <td>Search Retargeting Conversions</td>
+                <td>113 Conversions</td>
+              </tr>
+              <tr>
+                <td>Final Week Surge</td>
+                <td>41 Conversions in 7 days</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Channel Performance Matrix -->
+    <section class="channels-section">
+      <div class="section-header">
+        <span class="section-eyebrow">Channel Architecture</span>
+        <h2 class="section-title">How Google &amp; Meta Complemented Each Other</h2>
+        <p class="section-subtitle">
+          Instead of competing, each platform was given a distinct role in the student recruitment funnel.
+        </p>
+      </div>
+
+      <div class="comparison-table-wrapper">
+        <table class="comp-table">
+          <thead>
+            <tr>
+              <th>Channel</th>
+              <th>Primary Role in Funnel</th>
+              <th>Best Performing Asset / Audience</th>
+              <th>Avg. CPA / CPL</th>
+              <th>Conversion Impact</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Google Search &amp; PMax</strong></td>
+              <td>Bottom-of-Funnel intent capture (Parents actively comparing schools)</td>
+              <td>Exact match <code>school admissions dubai</code> + Retargeting Search</td>
+              <td><span class="highlight-pill pill-green">64 – 112 AED</span></td>
+              <td>High volume of scheduled campus tours and direct phone inquiries.</td>
+            </tr>
+            <tr>
+              <td><strong>Meta (FB &amp; IG)</strong></td>
+              <td>Mid-Funnel visual validation &amp; parent reassurance</td>
+              <td>Campus Facilities Video (19% hook rate) + 1% Lookalike of enrolled parents</td>
+              <td><span class="highlight-pill pill-blue">138 – 184 AED</span></td>
+              <td>Drove 4 confirmed student enrollments &amp; qualified WhatsApp conversations.</td>
+            </tr>
+            <tr>
+              <td><strong>WhatsApp &amp; Calls</strong></td>
+              <td>Instant conversion bridge for mobile users</td>
+              <td>Direct click-to-WhatsApp CTA buttons on landing pages and ad extensions</td>
+              <td><span class="highlight-pill pill-purple">Friction-free</span></td>
+              <td>Generated 370+ direct chats and phone calls during peak intake.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Education Playbook Takeaways -->
+    <section class="playbook-section">
+      <div class="section-header">
+        <span class="section-eyebrow">The Playbook</span>
+        <h2 class="section-title">4 Actionable Takeaways for Your Institution</h2>
+        <p class="section-subtitle">
+          Principles any UAE private school, nursery, or academy can implement immediately to increase enrollment yield.
+        </p>
+      </div>
+
+      <div class="takeaways-grid">
+        <div class="takeaway-box">
+          <h4>1. Lock Down Geo-Presence</h4>
+          <p>Always enforce "Physical Presence" in Google location settings. Don't waste budget paying for clicks from curious tourists or outside emirates.</p>
+        </div>
+
+        <div class="takeaway-box">
+          <h4>2. Display Transparent Tuition</h4>
+          <p>Highlight fee ranges (e.g. <em>"Fees from AED 36,000"</em>) directly in sitelinks. It pre-qualifies parents and stops budget waste on clicks from parents seeking subsidized schooling.</p>
+        </div>
+
+        <div class="takeaway-box">
+          <h4>3. Prioritize WhatsApp Over Forms</h4>
+          <p>In the UAE market, parents prefer real-time messaging. Adding a prominent WhatsApp chat option can lift inquiry volume by 35% to 50% overnight.</p>
+        </div>
+
+        <div class="takeaway-box">
+          <h4>4. Optimize for Tours, Not Clicks</h4>
+          <p>Connect your CRM data to Google and Meta. Optimizing for "School Tour Scheduled" instead of page visits filters out low-intent curiosity clicks.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- High-Converting CTA Box -->
+    <section class="cta-box" id="audit-cta">
+      <h2>Ready to Fill Your School's Upcoming Capacity?</h2>
+      <p>
+        Stop letting valuable ad budget leak into low-intent clicks. Get an independent 20-minute audit of your Google &amp; Meta ad accounts to identify immediate cost savings and enrollment opportunities.
+      </p>
+      <div class="cta-buttons">
+        <a href="https://wa.me/971508355477?text=Hi%20Slicky%20Media,%20I%20would%20like%20to%20book%20a%20complimentary%20Education%20Ads%20Audit" class="btn-whatsapp-large" id="main-whatsapp-btn" target="_blank" rel="noopener">
+          <span>💬 Book a WhatsApp Audit</span>
+        </a>
+        <a href="index.html" class="btn-secondary" id="view-services-btn">
+          <span>Explore All Services &rarr;</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2026 Slicky Media. All Rights Reserved. · <a href="https://services.slickymedia.com">services.slickymedia.com</a></p>
+    </footer>
+  </div>
+
+  <script>
+    function showTab(tabId, buttonElement) {
+      // Hide all tabs
+      document.querySelectorAll('.tab-content').forEach(function(content) {
+        content.classList.remove('active');
+      });
+      // Deactivate all buttons
+      document.querySelectorAll('.tab-btn').forEach(function(btn) {
+        btn.classList.remove('active');
+      });
+      // Show selected tab
+      document.getElementById(tabId).classList.add('active');
+      // Highlight button
+      buttonElement.classList.add('active');
+    }
+  </script>
+</body>
+</html>
