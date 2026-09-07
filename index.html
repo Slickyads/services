@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta property="og:url" content="https://services.slickymedia.com/">
     <meta property="og:title" content="Slicky Media - Digital Marketing Services">
     <meta property="og:description" content="We help businesses grow with Google Ads, Meta Ads, SEO, and more.">
@@ -189,19 +189,72 @@
             font-size: 0.8rem;
             color: rgba(255,255,255,0.6);
         }
+        .mobile-hide {
+            display: flex;
+        }
+        @media (max-width: 900px) {
+            .mobile-hide {
+                display: none;
+            }
+        }
         @media (max-width: 900px) {
             .container {
                 flex-direction: column;
             }
             .left, .right {
                 width: 100%;
-                padding: 30px 20px;
+                padding: 25px 15px;
             }
-            /* No additional padding needed - left (branding) comes first, then right (form) */
+            h1 {
+                font-size: 1.8rem;
+                margin-bottom: 15px;
+            }
+            .subtitle {
+                font-size: 0.9rem;
+                margin-bottom: 20px;
+            }
+            .logo {
+                width: 50px;
+                height: 50px;
+                margin-bottom: 20px;
+            }
+            .logo img {
+                width: 35px;
+                height: 35px;
+            }
+            .badge {
+                font-size: 0.75rem;
+                padding: 6px 12px;
+                margin-bottom: 15px;
+            }
+            .form-title {
+                font-size: 1.2rem;
+                margin-bottom: 20px;
+            }
+            .form-group {
+                margin-bottom: 12px;
+            }
+            .form-group input,
+            .form-group select,
+            .form-group textarea {
+                padding: 12px 14px;
+                font-size: 0.85rem;
+            }
+            .btn-whatsapp {
+                padding: 14px;
+                font-size: 0.9rem;
+            }
+            .form-note {
+                font-size: 0.7rem;
+            }
+            .left {
+                min-height: auto;
+            }
         }
     </style>
 </head>
 <body>
+
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-58ZPXKF"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -212,17 +265,17 @@
             <div class="logo">
                 <img src="https://services.slickymedia.com/assets/images/slickyads_logo.png" alt="Slicky Media">
             </div>
-            <span class="badge">Free Strategy Session</span>
             <h1>Turn Your Ad Spend Into<br><span class="highlight">Real Results</span></h1>
             <p class="subtitle">We help businesses scale with Google Ads, Meta Ads, SEO & Social Media. Data-driven strategies that deliver growth.</p>
-            <div class="services-list">
+            <span class="badge mobile-hide">Free Strategy Session</span>
+            <div class="services-list mobile-hide">
                 <span class="service">Google Ads</span>
                 <span class="service">Meta Ads</span>
                 <span class="service">SEO</span>
                 <span class="service">Shopify</span>
                 <span class="service">Social Media</span>
             </div>
-            <div class="stats">
+            <div class="stats mobile-hide">
                 <div class="stat">
                     <div class="stat-number">3-4x</div>
                     <div class="stat-label">Avg. ROAS</div>
@@ -279,5 +332,6 @@
             </div>
         </div>
     </div>
+
 </body>
 </html>
