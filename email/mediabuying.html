@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<body style="margin:0;padding:0;background:#f4f4f4;font-family:Arial,Helvetica,sans-serif;color:#222222;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#f4f4f4;padding:24px 0;">
+<tr><td align="center">
+<table role="presentation" width="600" cellpadding="0" cellspacing="0" style="background:#ffffff;border-radius:6px;overflow:hidden;">
+<tr><td>
+<a href="https://services.slickymedia.com/?utm_medium=email&utm_source=slickymedia&utm_campaign=mediabuying&utm_content={{ encodeURIComponent($json['business_name'] || $json.Website || 'lead') }}" target="_blank"><img src="https://static.wixstatic.com/media/e3b83a_938af0339bf94eafbf70d3901dcbfdd4~mv2.png" alt="Slicky Media" width="600" style="display:block;width:100%;max-width:600px;height:auto;border:0;"></a>
+</td></tr>
+<tr><td style="padding:32px 32px 8px 32px;font-size:15px;line-height:1.6;">
+<p>Dear {{ $json['Contact Person'] ? $json['Contact Person'] : (($json['business_name'] || 'Your') + ' Team') }},</p>
+<p>I'm Asim, Founder &amp; Digital Director at Slicky Media. I noticed that <strong>{{ $json['business_name'] || 'your company' }}</strong> is currently looking for a {{ $json['job_title'] || 'Google Ads Specialist' }}.</p>
+<p>Rather than spending weeks recruiting, onboarding, and managing a full-time hire while potential leads go off to competitors, <strong>Slicky Media</strong> can step in immediately. We provide senior-level Google Ads management and conversion optimization with zero ramp-up time.</p>
+<p>We audit your existing search and display campaigns, fix tracking or conversion bottlenecks, and manage high-intent ad spend focused entirely on high-ROI client acquisition.</p>
+</td></tr>
+<tr><td style="padding:8px 32px;">
+<a href="https://services.slickymedia.com/google-ads/?utm_medium=email&utm_source=slickymedia&utm_campaign=mediabuying&utm_content={{ encodeURIComponent($json['business_name'] || $json.Website || 'lead') }}" target="_blank"><img src="https://static.wixstatic.com/media/e3b83a_445618d1523e43ffbf6e03b2c39fdf3b~mv2.png" alt="Recent campaign results" width="536" style="display:block;width:100%;max-width:536px;height:auto;border-radius:4px;border:0;"></a>
+<p style="font-size:12px;color:#777777;margin-top:6px;">A snapshot of recent Google Ads campaign performance for our partner clients.</p>
+</td></tr>
+<tr><td style="padding:8px 32px;font-size:15px;line-height:1.6;">
+<p>Case Studies &amp; Results: <a href="https://services.slickymedia.com/google-ads?utm_medium=email&utm_source=slickymedia&utm_campaign=mediabuying&utm_content={{ encodeURIComponent($json['business_name'] || $json.Website || 'lead') }}">https://services.slickymedia.com/google-ads</a><br>
+	Ad Spend  &amp; ROI Estimator: <a href="https://services.slickymedia.com/calculator/?utm_medium=email&utm_source=slickymedia&utm_campaign=mediabuying&utm_content={{ encodeURIComponent($json['business_name'] || $json.Website || 'lead') }}">https://services.slickymedia.com/calculator</a><br>
+Recent Content &amp; Social: <a href="https://www.instagram.com/theslickymedia/?utm_medium=email&utm_source=slickymedia&utm_campaign=mediabuying&utm_content={{ encodeURIComponent($json['business_name'] || $json.Website || 'lead') }}">https://www.instagram.com/theslickymedia</a><br>
+Company Updates: <a href="http://linkedin.com/company/slickymedia?utm_medium=email&utm_source=slickymedia&utm_campaign=mediabuying&utm_content={{ encodeURIComponent($json['business_name'] || $json.Website || 'lead') }}">http://linkedin.com/company/slickymedia</a></p>
+</td></tr>
+<tr><td style="padding:0 32px 8px 32px;font-size:14px;line-height:1.6;color:#555555;">
+<p>We operate with transparent monthly reporting and flexible month-to-month contracts, giving you a dedicated team for a fraction of the cost and commitment of an in-house hire.</p>
+</td></tr>
+<tr><td style="padding:8px 32px 28px 32px;text-align:center;">
+<a href="https://api.whatsapp.com/send?phone=971543599147&text={{ encodeURIComponent(`Hi Asim, saw your email regarding our ${$json['job_title'] || 'Google Ads'} role at ${$json['business_name'] || 'our company'}. Let's discuss.`) }}" target="_blank" style="display:inline-block;background:#165df8;color:#ffffff;text-decoration:none;font-size:14px;font-weight:bold;padding:12px 28px;border-radius:4px;">Chat With Us on WhatsApp</a>
+</td></tr>
+<tr><td style="padding:0 32px 32px 32px;border-top:1px solid #eeeeee;">
+<table role="presentation" cellpadding="0" cellspacing="0" style="margin-top:20px;">
+<tr>
+<td style="vertical-align:middle;padding-right:12px;">
+<a href="https://slickymedia.com/?utm_medium=email&utm_source=slickymedia&utm_campaign=mediabuying&utm_content={{ encodeURIComponent($json['business_name'] || $json.Website || 'lead') }}" target="_blank"><img src="https://static.wixstatic.com/shapes/e3b83a_7825a98ea8fa480983652a37c72d4dc4.svg" alt="Slicky Media" width="48" style="display:block;border:0;"></a>
+</td>
+<td style="vertical-align:middle;font-size:13px;line-height:1.5;color:#444444;">
+<strong>Asim</strong><br>
+Founder &amp; Digital Director, Slicky Media<br>
+<a href="https://api.whatsapp.com/send?phone=971543599147" target="_blank" style="color:#444444;text-decoration:none;">+971543599147</a><br>
+<a href="mailto:asim@slickyads.com" style="color:#444444;text-decoration:none;">asim@slickyads.com</a><br>
+</td>
+</tr>
+</table>
+</td></tr>
+</table>
+<p style="font-size:11px;color:#999999;margin-top:16px;max-width:600px;">If you'd prefer not to receive further emails from us, just reply and let us know.</p>
+</td></tr>
+</table>
+</body>
+</html>
