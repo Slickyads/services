@@ -1,0 +1,34 @@
+<html><head>
+    <!--
+    Load various Web Components polyfills required by IE and Edge. While the polyfills are
+    not needed for other browsers, they're loaded irrespective of browser features because we rely
+    on the polyfill's `WebComponentsReady` event as a signal that the app is ready to be initialized
+    (see init.js).
+    -->
+    <!-- Polyfill Web Components. -->
+    <script src="webcomponentsjs/webcomponents-lite.js"></script>
+
+    <!-- Polyfill Web Animations. This file is necessary for some paper elements. -->
+    <script src="webcomponentsjs/web-animations-next-lite.min.js"></script>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Roboto:regular">
+
+    <script src="preview_polymer.js"></script>
+
+    <style>
+      body {
+        margin: 0;
+      }
+
+      tf-creative-preview {
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  <script>window.gwdPreview = {"config":{"previewPath":"index.html","modes":["single","allfeeds"],"sizes":["300x600"],"breakpoints":null,"feeds":{"sample_studio_data":{"name":"sample_studio_data","feed":{"destination_url":"http://www.google.com","google_ait_url":"","google_click_url":"","google_height":"","google_template_data":{"adData":[{"INFINITIDXB_Feedsheet":[{"_id":0,"Unique_ID":1,"Reporting_Label":"Default","Audience_Desc":"","modelimg1":{"Type":"file","Url":"https://s0.2mdn.net/ads/richmedia/studio/36265203/36265203_20200310115251655_300x250_1.jpg"},"modelimg2":{"Type":"file","Url":"https://s0.2mdn.net/ads/richmedia/studio/36265203/36265203_20200310115300113_300x250_2.jpg"},"modelimg3":{"Type":"file","Url":"https://s0.2mdn.net/ads/richmedia/studio/36265203/36265203_20200310115255755_300x250_3.jpg"},"modelnameimg":{"Type":"file","Url":"https://s0.2mdn.net/ads/richmedia/studio/36265203/36265203_20200311240412616_infinitiq50-300x250.png"},"cta_label":"BOOK A TEST DRIVE","cta_url":{"Url":"https://www.infiniti-dubai.com/offers/infiniti-q50.html"},"cta_dial":"tel:+971566875234","Active":true}]}]}}}},"feedNames":["","sample_studio_data"],"reloadOnResize":false,"defaults":{"mode":"allfeeds","modeSettings":{"single":{"size":"300x600","feed":"sample_studio_data"},"allfeeds":{"size":"300x600","feeds":["","sample_studio_data"]}}}},"strings":{"MSG_ALL_FEEDS_MODE":"All sample data","MSG_ALL_SIZES_MODE":"All sizes","MSG_CUSTOM":"Custom","MSG_CUSTOM_SIZE":"Custom size","MSG_DESKTOP_MODE":"Desktop","MSG_DEVICE":"Device","MSG_MOBILE_MODE":"Mobile","MSG_NO_SAMPLE_DATA":"No sample data","MSG_NO_SAMPLE_DATA_TO_PREVIEW":"Select sample data to see previews.","MSG_NO_SIZES_TO_PREVIEW":"Select sizes to see previews.","MSG_NONE_SELECTED":"None selected","MSG_PARALLAX_MODE":"Parallax","MSG_PREVIEW_MODE":"Preview mode","MSG_RELOAD":"Reload","MSG_RELOAD_ALL":"Reload all","MSG_ROTATE_DEVICE":"Rotate device","MSG_SAMPLE_FEED":"Sample data","MSG_SAMPLE_FEEDS":"Sample data","MSG_SELECT_ALL":"Select all","MSG_SELECT_NONE":"Select none","MSG_SELECTED":"{num} selected","MSG_SHOW_SIZE":"Show size","MSG_SHOW_SIZES":"Show sizes","MSG_SINGLE_MODE":"Single size","MSG_VIEWPORT_SIZE":"Viewport size"}};</script></head>
+
+  <body>
+    <tf-creative-preview id="preview-app"></tf-creative-preview>
+  
+
+</body></html>

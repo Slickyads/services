@@ -1,0 +1,34 @@
+<html><head>
+    <!--
+    Load various Web Components polyfills required by IE and Edge. While the polyfills are
+    not needed for other browsers, they're loaded irrespective of browser features because we rely
+    on the polyfill's `WebComponentsReady` event as a signal that the app is ready to be initialized
+    (see init.js).
+    -->
+    <!-- Polyfill Web Components. -->
+    <script src="webcomponentsjs/webcomponents-lite.js"></script>
+
+    <!-- Polyfill Web Animations. This file is necessary for some paper elements. -->
+    <script src="webcomponentsjs/web-animations-next-lite.min.js"></script>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Roboto:regular">
+
+    <script src="preview_polymer.js"></script>
+
+    <style>
+      body {
+        margin: 0;
+      }
+
+      tf-creative-preview {
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  <script>window.gwdPreview = {"config":{"previewPath":"index.html","modes":["single","allfeeds"],"sizes":["300x600"],"breakpoints":null,"feeds":{"Feed Data":{"name":"Feed Data","feed":{"destination_url":"http://www.google.com","google_ait_url":"","google_click_url":"","google_height":"","google_template_data":{"adData":[{"2019_FeedSheet_V3_AlwaysOn_Test_AlwaysOn_Feed":[{"_id":0,"Unique_ID":1,"Reporting_Label":"300x250 Default","Gallery1_URL":{"Url":"https://gmmiddleeastevents.com/dcstudio/dynamic/images/2018/jan/bolt-ev/300x250-01-bolt-ev.jpg"},"Gallery2_URL":{"Url":"https://gmmiddleeastevents.com/dcstudio/dynamic/images/2018/jan/bolt-ev/300x250-02-bolt-ev.jpg"},"Gallery3_URL":{"Url":"https://gmmiddleeastevents.com/dcstudio/dynamic/images/2018/jan/bolt-ev/300x250-03-bolt-ev.jpg"},"BG_ExitURL":{"Url":"http://gmmiddleeastevents.com/redirect/tahoe/index.php?lang=en&cmp=OLA_DISPLAY_%ebuy!_%epid!_%eaid!_%ecid!_CV1_CV2"},"FontColor":"rgb(255, 255, 255)","TNC":"*Important info","Title_Text":"Tahoe","Headline_01_Text":"The perfect blend <br> of family adventurer","Headline_02_Text":"and city explorer.","Headline_03_Text":"Do anything with<br> the Tahoe","CTA_01_text":"Learn More","CTA_01_ExitURL":{},"CTA_02_text":"NONE","CTA_02_ExitURL":{"Url":"https://gmmiddleeastevents.com/redirect/testdrive/index.php?lang=en&cmp=OLA_DISPLAY_%ebuy!_%epid!_%eaid!_%ecid!_CV1_CV3"},"isDefault":true,"Active":true,"CTC_01_ExitURL":"","CTC_01_text":"","TNC_Text":"*Disclaimer overlay and \u201c*Important Info\u201d is only necessary if units headlines generates a disclaimer. Asterisks should be used for single disclaimers, and numerals for more than 1 disclaimer. Asterisks and Numerals need to be super-scripted               in the headlines and do not need to be super-scripted in this Disclaimer overlay. If the unit doesn\u2019t need a disclaimer, then HIDE the *important Info Layer.","TNC_Caption":"*Important info"}],"2019_FeedSheet_V3_AlwaysOn_AlwaysOn_Feed":[{"Gallery1_URL":{"Url":"300x600-01.jpg"},"Gallery2_URL":{"Url":"300x600-02.jpg"},"Gallery3_URL":{"Url":"300x600-03.jpg"},"CTA_01_text":"Learn More"}],"FeedSheet_V3_2019_AlwaysOn":[{"Gallery1_URL":{"Url":"300x600-01.jpg"},"Gallery2_URL":{"Url":"300x600-02.jpg"},"Gallery3_URL":{"Url":"300x600-03.jpg"},"CTA_01_text":"Learn More"}]}]}}},"sample_studio_data":{"name":"sample_studio_data","feed":{"destination_url":"http://www.google.com","google_ait_url":"","google_click_url":"","google_height":"","google_template_data":{"adData":[{"2019_FeedSheet_V3_AlwaysOn_AlwaysOn_Feed":[{"_id":0,"Unique_ID":1,"Reporting_Label":"300x250 Default","Gallery1_URL":{"Url":"https://gmmiddleeastevents.com/dcstudio/dynamic/images/2018/jan/bolt-ev/300x250-01-bolt-ev.jpg"},"Gallery2_URL":{"Url":"https://gmmiddleeastevents.com/dcstudio/dynamic/images/2018/jan/bolt-ev/300x250-02-bolt-ev.jpg"},"Gallery3_URL":{"Url":"https://gmmiddleeastevents.com/dcstudio/dynamic/images/2018/jan/bolt-ev/300x250-03-bolt-ev.jpg"},"FontColor":"#FFFFFF","TNC":false,"TNC_Caption":"Important info","TNC_Text":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt arcu et metus aliquam interdum. ","Title_Text":"Tahoe","Headline_01_Text":"The perfect blend <br> of family adventurer","Headline_02_Text":"and city explorer.","Headline_03_Text":"Do anything with<br> the Tahoe","CTA_01_text":"Learn More","CTA_01_ExitURL":{"Url":"http://gmmiddleeastevents.com/redirect/tahoe/index.php?lang=en&cmp=22109762"},"isDefault":true,"Active":true}]}]}}},"sample_studio_data_1":{"name":"sample_studio_data_1","feed":{"destination_url":"http://www.google.com","google_ait_url":"","google_click_url":"","google_height":"","google_template_data":{"adData":[{"FeedSheet_V3_2019_AlwaysOn":[{"_id":0,"Unique_ID":1,"Reporting_Label":"300x250 Default","Gallery1_URL":{"Url":"https://gmmiddleeastevents.com/dcstudio/dynamic/images/2018/jan/bolt-ev/300x250-01-bolt-ev.jpg"},"Gallery2_URL":{"Url":"https://gmmiddleeastevents.com/dcstudio/dynamic/images/2018/jan/bolt-ev/300x250-02-bolt-ev.jpg"},"Gallery3_URL":{"Url":"https://gmmiddleeastevents.com/dcstudio/dynamic/images/2018/jan/bolt-ev/300x250-03-bolt-ev.jpg"},"FontColor":"#FFFFFF","TNC":false,"TNC_Caption":"Important info","TNC_Text":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt arcu et metus aliquam interdum. ","Title_Text":"Tahoe","Headline_01_Text":"The perfect blend <br> of family adventurer","Headline_02_Text":"and city explorer.","Headline_03_Text":"Do anything with<br> the Tahoe","CTA_01_text":"Learn More","CTA_01_ExitURL":{"Url":"https://gmmiddleeastevents.com/redirect/tahoe/index.php?lang=en&cmp=22109762"},"BG_ExitURL":{"Url":"https://gmmiddleeastevents.com/redirect/tahoe/index.php?lang=en&cmp=22109762"},"isDefault":true,"Active":true}]}]}}}},"feedNames":["","Feed Data","sample_studio_data","sample_studio_data_1"],"reloadOnResize":false,"defaults":{"mode":"allfeeds","modeSettings":{"single":{"size":"300x600","feed":"Feed Data"},"allfeeds":{"size":"300x600","feeds":["","Feed Data","sample_studio_data","sample_studio_data_1"]}}}},"strings":{"MSG_ALL_FEEDS_MODE":"All sample data","MSG_ALL_SIZES_MODE":"All sizes","MSG_CUSTOM":"Custom","MSG_CUSTOM_SIZE":"Custom size","MSG_DESKTOP_MODE":"Desktop","MSG_DEVICE":"Device","MSG_MOBILE_MODE":"Mobile","MSG_NO_SAMPLE_DATA":"No sample data","MSG_NO_SAMPLE_DATA_TO_PREVIEW":"Select sample data to see previews.","MSG_NO_SIZES_TO_PREVIEW":"Select sizes to see previews.","MSG_NONE_SELECTED":"None selected","MSG_PARALLAX_MODE":"Parallax","MSG_PREVIEW_MODE":"Preview mode","MSG_RELOAD":"Reload","MSG_RELOAD_ALL":"Reload all","MSG_ROTATE_DEVICE":"Rotate device","MSG_SAMPLE_FEED":"Sample data","MSG_SAMPLE_FEEDS":"Sample data","MSG_SELECT_ALL":"Select all","MSG_SELECT_NONE":"Select none","MSG_SELECTED":"{num} selected","MSG_SHOW_SIZE":"Show size","MSG_SHOW_SIZES":"Show sizes","MSG_SINGLE_MODE":"Single size","MSG_VIEWPORT_SIZE":"Viewport size"}};</script></head>
+
+  <body>
+    <tf-creative-preview id="preview-app"></tf-creative-preview>
+  
+
+</body></html>
