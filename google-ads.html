@@ -144,7 +144,7 @@ ul li::before{content:'→';position:absolute;left:0;color:var(--coral);font-wei
 <body>
 <header class="nav">
   <div class="nav-inner">
-    <a class="brand" href="/">
+    <a class="brand" href="#">
       <img src="assets/images/slickymedia_logo-white.png" alt="Slicky Media" class="mark">
       <span>
         <span class="name" style="display:block;">Slicky Media</span>
@@ -152,76 +152,185 @@ ul li::before{content:'→';position:absolute;left:0;color:var(--coral);font-wei
       </span>
     </a>
     <nav class="links">
-      <a href="/">Home</a>
-      <a href="services" class="">Services</a>
-      <a href="google-ads-agency-dubai" class="active">Google Ads Dubai</a>
-      <a href="case-studies">Case Studies</a>
-      <a href="blog">Blog</a>
-      <a href="contact">Contact</a>
+      <a href="#google-ads">Home</a>
+      <a href="#services">Services</a>
+      <a href="#google-ads" class="active">Google Ads Dubai</a>
+      <a href="#case-studies">Case Studies</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#contact">Contact</a>
     </nav>
     <a class="btn-primary" href="https://wa.me/971508355477?text=Hi%20Asim%2C%20I%27d%20like%20to%20discuss%20Google%20Ads." target="_blank" rel="noopener">WhatsApp →</a>
   </div>
 </header>
 
 <main>
-<section class="hero wrap" style="padding-top:76px;padding-bottom:60px">
-  <div style="max-width:820px">
-    <span class="tag">Google Ads Agency Dubai</span>
-    <h1 class="headline">Google Ads agency in Dubai that <span class="accent">tracks every dirham</span> to a real conversion.</h1>
-    <p class="sub">Search, Shopping, Performance Max, Display and YouTube campaigns built around tracked conversions, not raw clicks. 10+ years across Dubai, UAE, Singapore and Oman.</p>
-    <div style="display:flex;gap:14px;flex-wrap:wrap;margin-bottom:56px">
+<section id="google-ads" class="hero wrap">
+  <div class="hero-wrap">
+    <span class="svc-badge">Google Ads Agency Dubai</span>
+    <h1 class="headline">Google Ads that turn ad spend into <span class="accent">tracked results</span>.</h1>
+    <p class="sub">Search, Shopping, Performance Max, Display and YouTube campaigns built around tracked conversions — not raw clicks. Work directly with the strategist who builds and runs your campaigns.</p>
+    <div class="buttons">
       <a class="btn-primary" href="https://wa.me/971508355477?text=Hi%20Asim%2C%20I%27d%20like%20to%20discuss%20Google%20Ads." target="_blank" rel="noopener">Message on WhatsApp →</a>
-      <a class="btn-outline" href="contact">Book a call</a>
+      <a class="btn-outline" href="#contact">Book a call</a>
     </div>
   </div>
 </section>
 
-<section class="alt-bg">
+<section id="services" class="alt-bg">
   <div class="wrap">
-    <div class="section-head" style="margin:0 auto 48px;text-align:center;max-width:680px">
+    <div class="section-head" style="margin:0 auto 56px;text-align:center;max-width:680px">
       <span class="tag">Google Ads services</span>
       <h2>What's included in every engagement.</h2>
     </div>
-    <div class="card" style="max-width:800px;margin:0 auto">
-      <h3>Account audit & restructure</h3>
-      <p>Full account review, keyword research, negative keyword strategy, and campaign architecture built for UAE search volumes.</p>
-      <h3 style="margin-top:18px">Conversion tracking from day one</h3>
-      <p>Every dirham is accounted for. Tracking setup before spend goes live.</p>
-      <h3 style="margin-top:18px">Weekly reports with raw data</h3>
-      <p>No black-box dashboards — you get the numbers that matter.</p>
-      <h3 style="margin-top:18px">Direct WhatsApp access</h3>
-      <p>The person who audits your account runs it week to week.</p>
+    <div class="features-grid">
+      <div class="card">
+        <h3>Account audit & restructure</h3>
+        <p>Full account review, keyword research, negative keyword strategy, and campaign architecture built for your market.</p>
+      </div>
+      <div class="card">
+        <h3>Conversion tracking from day one</h3>
+        <p>Every unit of spend is accounted for. Tracking setup before spend goes live.</p>
+      </div>
+      <div class="card">
+        <h3>Weekly reports with raw data</h3>
+        <p>No black-box dashboards — you get the numbers that matter.</p>
+      </div>
+      <div class="card">
+        <h3>Direct WhatsApp access</h3>
+        <p>The person who audits your account runs it week to week.</p>
+      </div>
     </div>
   </div>
 </section>
 
-<section>
+<section id="case-studies">
+  <div class="wrap">
+    <div class="section-head" style="text-align:center;max-width:680px;margin:0 auto 48px">
+      <span class="tag">Case study</span>
+      <h2>Campaigns built to deliver measurable results.</h2>
+    </div>
+    <div class="features-grid" style="grid-template-columns:1fr;">
+      <div class="card">
+        <h3>E-commerce growth</h3>
+        <p>A structured Google Ads plan that increased qualified traffic, improved conversion rates, and scaled profitably across Shopping and Search.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="reviews">
+  <div class="wrap">
+    <div class="section-head" style="text-align:center;max-width:680px;margin:0 auto 48px">
+      <span class="tag">Reviews</span>
+      <h2>What clients say.</h2>
+    </div>
+    <div class="features-grid" style="grid-template-columns:1fr;">
+      <div class="card">
+        <h3>"Clear reporting, direct communication"</h3>
+        <p>They took over our paid search, set up conversion tracking immediately, and delivered weekly insights we could actually act on.</p>
+        <p style="margin-top:10px;font-size:13px;color:var(--muted)">— Client, e-commerce brand</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
   <div class="wrap">
     <div class="section-head" style="text-align:center;max-width:680px;margin:0 auto 48px">
       <span class="tag">FAQ</span>
-      <h2>Questions about Google Ads in Dubai.</h2>
+      <h2>Questions about Google Ads.</h2>
     </div>
     <div class="faq-accordion" style="max-width:800px;margin:0 auto">
       <div class="faq-item">
-        <button class="faq-q">How much does Google Ads management cost in Dubai?<span class="plus">+</span></button>
-        <div class="faq-a"><p>Pricing depends on your ad spend and campaign complexity. I typically work with monthly retainers ranging from AED 3,000 to AED 15,000 for Dubai and UAE-based businesses.</p></div>
+        <button class="faq-q">How much does Google Ads management cost?<span class="plus">+</span></button>
+        <div class="faq-a"><p>Pricing depends on your ad spend and campaign complexity. We work with retainers scaled to your budget and goals.</p></div>
       </div>
       <div class="faq-item">
-        <button class="faq-q">How do I choose a Google Ads agency in Dubai?<span class="plus">+</span></button>
-        <div class="faq-a"><p>Look for an agency that manages campaigns directly, provides conversion tracking from day one, and gives weekly reports with raw data. At Slicky Ads, you work with me directly — no account manager relay.</p></div>
+        <button class="faq-q">How do I choose a Google Ads agency?<span class="plus">+</span></button>
+        <div class="faq-a"><p>Look for an agency that manages campaigns directly, provides conversion tracking from day one, and gives weekly reports with raw data. You work with the same strategist throughout.</p></div>
       </div>
       <div class="faq-item">
-        <button class="faq-q">What is the average ROI on Google Ads in UAE?<span class="plus">+</span></button>
-        <div class="faq-a"><p>ROI varies by industry and campaign structure. Most Dubai businesses see measurable results within 30-60 days when campaigns are properly structured with conversion tracking and negative keyword strategies.</p></div>
+        <button class="faq-q">What is the average ROI on Google Ads?<span class="plus">+</span></button>
+        <div class="faq-a"><p>ROI varies by industry and campaign structure. Most businesses see measurable results within 30-60 days when campaigns are properly structured with conversion tracking and negative keyword strategies.</p></div>
       </div>
       <div class="faq-item">
-        <button class="faq-q">Does Google Ads work for UAE businesses?<span class="plus">+</span></button>
-        <div class="faq-a"><p>Yes — Google Ads is highly effective for UAE businesses when targeting is done correctly. UAE search volumes are high, competition varies by sector, and a well-managed campaign can deliver strong returns.</p></div>
+        <button class="faq-q">Does Google Ads work for my business?<span class="plus">+</span></button>
+        <div class="faq-a"><p>Yes — Google Ads is effective when targeting is done correctly. Search volume, competition, and a well-managed campaign all determine success.</p></div>
       </div>
       <div class="faq-item">
-        <button class="faq-q">How long does it take to see results from Google Ads in Dubai?<span class="plus">+</span></button>
-        <div class="faq-a"><p>You can see initial data within 1-2 weeks, but meaningful results typically take 30-60 days of optimization. I set up conversion tracking before spend goes live so every dirham is tracked.</p></div>
+        <button class="faq-q">How long does it take to see results?<span class="plus">+</span></button>
+        <div class="faq-a"><p>You can see initial data within 1-2 weeks, but meaningful results typically take 30-60 days of optimization. We set up conversion tracking before spend goes live.</p></div>
       </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="cta-section alt-bg">
+  <div class="wrap">
+    <div class="section-head" style="text-align:center;max-width:680px;margin:0 auto 48px">
+      <span class="tag">Contact</span>
+      <h2>Start your Google Ads plan.</h2>
+    </div>
+    <div class="cta-panel">
+      <h2>Get your Google Ads strategy call</h2>
+      <p class="lead">Tell us what you're promoting. You'll have a projection back within 48 hours, or skip the queue and message us on WhatsApp now.</p>
+      <form id="leadForm" novalidate>
+        <div class="row2">
+          <div class="field" data-field="fullName">
+            <label for="fullName">Full name *</label>
+            <input type="text" id="fullName" name="fullName" autocomplete="name">
+            <div class="err">Please enter your name.</div>
+          </div>
+          <div class="field" data-field="company">
+            <label for="company">Company / project *</label>
+            <input type="text" id="company" name="company">
+            <div class="err">Please enter your company or project name.</div>
+          </div>
+        </div>
+        <div class="row2">
+          <div class="field" data-field="email">
+            <label for="email">Work email *</label>
+            <input type="email" id="email" name="email" autocomplete="email">
+            <div class="err">Please enter a valid email address.</div>
+          </div>
+          <div class="field" data-field="whatsapp">
+            <label for="whatsapp">WhatsApp number *</label>
+            <input type="tel" id="whatsapp" name="whatsapp" placeholder="+971 5X XXX XXXX">
+            <div class="err">Please enter a valid WhatsApp number.</div>
+          </div>
+        </div>
+        <div class="row2">
+          <div class="field" data-field="projectType">
+            <label for="projectType">Service needed *</label>
+            <select id="projectType" name="projectType">
+              <option value="">Select one</option>
+              <option>Google Ads</option>
+              <option>Meta Ads</option>
+              <option>SEO</option>
+              <option>Shopify / eCommerce</option>
+              <option>Social Media</option>
+              <option>Other</option>
+            </select>
+            <div class="err">Please select a service.</div>
+          </div>
+          <div class="field" data-field="budget">
+            <label for="budget">Monthly ad spend *</label>
+            <select id="budget" name="budget">
+              <option value="">Select a range</option>
+              <option>Under 5,000</option>
+              <option>5,000 – 20,000</option>
+              <option>20,000 – 75,000</option>
+              <option>75,000+</option>
+            </select>
+            <div class="err">Please select a budget range.</div>
+          </div>
+        </div>
+        <div class="cta-buttons">
+          <button type="submit" class="btn btn-primary" id="submitBtn">Send my WhatsApp brief</button>
+          <a href="#" class="btn btn-ghost" id="waDirectBtn">Chat on WhatsApp instead</a>
+        </div>
+        <div class="result" id="formResult"></div>
+      </form>
     </div>
   </div>
 </section>
