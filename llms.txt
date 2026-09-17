@@ -1,0 +1,17 @@
+# LLM Visibility File for Google Search Console
+# Helps AI crawlers discover our site and understand its purpose.
+
+Site Name: Slicky Media
+Site URL: https://services.slickymedia.com/
+Description: Digital marketing agency offering Google Ads, Meta Ads, SEO, Shopify growth, social media management, and traffic projects.
+Services:
+  - Google Ads Management
+  - Meta Ads (Facebook & Instagram)
+  - SEO Services
+  - eCommerce / Shopify Growth
+  - Social Media Management
+  - Digital Project / Traffic Management
+Contact Email: info@slickymedia.com
+Last Updated: 2026-09-18
+
+Sitemap: https://services.slickymedia.com/sitemap.xml

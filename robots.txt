@@ -1,0 +1,5 @@
+# Robots.txt for Slicky Media
+User-agent: *
+Allow: /
+
+Sitemap: https://services.slickymedia.com/sitemap.xml
