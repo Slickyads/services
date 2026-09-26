@@ -177,6 +177,25 @@ ul li::before{content:'→';position:absolute;left:0;color:var(--coral);font-wei
 .result.success{color:var(--teal)}
 .result.error{color:var(--coral)}
 </style>
+<style type="text/css">
+	/* Target your Pay Now button element */
+.pay-now-button, 
+iframe[title="Stripe Buy Button"] {
+  color: #ffffff;             /* Set text color to white */
+  width: 100%;                /* Full width to match container/Get Started button */
+  max-width: 100%;            /* Ensure it expands fully */
+  box-sizing: border-box;     /* Include padding in width calculation */
+}
+
+/* Container wrapping the Stripe iframe */
+.stripe-button-wrapper,
+iframe[title="Stripe Buy Button"] {
+  display: block !important;
+  width: 200px !important; /* Adjust this value to match your Get Started button width */
+  margin: 0 auto;           /* Centers the button if needed */
+}
+
+</style>
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-58ZPXKF');</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Slicky Media","url":"https://services.slickymedia.com/","logo":"https://services.slickymedia.com/assets/images/slickymedia_logo.png","sameAs":["https://www.instagram.com/slickymedia/","https://linkedin.com/in/asimkh","https://medium.com/@asimkh","https://github.com/asimkh"],"contactPoint":{"@type":"ContactPoint","telephone":"+971-54-359-9147","contactType":"Customer Service","areaServed":"AE","availableLanguage":["English"]},"founder":{"@type":"Person","name":"Slicky Media"},"address":{"@type":"PostalAddress","addressLocality":"","addressCountry":"AE"}}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Service","serviceType":"Google Ads Management","provider":{"@type":"Organization","name":"Slicky Media"},"areaServed":", UAE","description":"Google Ads agency in  managing Search, Shopping, Performance Max, Display and YouTube campaigns for UAE businesses. Fixed monthly retainers from  2,750 plus one-time new customer setup packages.","url":"https://services.slickymedia.com/google-ads-agency-","priceRange":" 2,750 -  15,000","offers":[{"@type":"Offer","name":"New Customer Setup Package","price":"3000","priceCurrency":"","availability":"https://schema.org/InStock"},{"@type":"Offer","name":"Starter Monthly Management","price":"2750","priceCurrency":"","availability":"https://schema.org/InStock"},{"@type":"Offer","name":"Growth Monthly Management","price":"4500","priceCurrency":"","availability":"https://schema.org/InStock"},{"@type":"Offer","name":"Scale Monthly Management","price":"7500","priceCurrency":"","availability":"https://schema.org/InStock"}]}</script>
@@ -282,6 +301,17 @@ ul li::before{content:'→';position:absolute;left:0;color:var(--coral);font-wei
            rel="noopener">
           Get Started →
         </a>
+        <script async
+  src="https://js.stripe.com/v3/buy-button.js">
+</script>
+<br><br>
+<div style="width: 145px; color: white !important;" class="BuyButton-ButtonText">
+<stripe-buy-button
+  buy-button-id="buy_btn_1UJgWTER44WbhRd8RlDpz5xI"
+  publishable-key="pk_live_51N0BOtER44WbhRd87sl8OrCv359b1dakU1Q5m7aJWpFtwvkfeoWyg3eBnkbuFISvkeEiCQPmdA3F3kZsnn3V5Lb80071mzS6oG"
+>
+</stripe-buy-button>
+</div>
       </div>
 
       <!-- Growth Tier -->
@@ -747,5 +777,6 @@ document.getElementById('waForm').addEventListener('submit', function(e) {
   window.open(waUrl, '_blank');
 });
 </script>
+
 </body>
 </html>
